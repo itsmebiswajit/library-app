@@ -1,0 +1,238 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0d4d4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #4CAF50;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Book list styles */
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Book card styles */
+.book-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.book-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.book-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.book-card i {
+    font-style: italic;
+    color: #777;
+}
+
+
+.book-image {
+    max-width: 100%; /* Ensure the image doesn't exceed the card width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners to the image */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    width: 100%; /* Make the image fill the container */
+    max-height: 300px; /* Set a maximum height if needed */
+}
+
+
+/* Edit Form Styles */
+.edit-form {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.edit-form label {
+    display: block;
+    margin: 5px 0;
+}
+
+.edit-form input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.edit-form button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-form button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.edit-form button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.edit-form button[type="button"] {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.edit-form button[type="button"]:hover {
+    background-color: #c82333;
+}
+
+/* Add Book Form Card Styles */
+.form-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; /* Center the card */
+    text-align: center;
+}
+
+.form-card h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.form-card label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+    color: #555;
+}
+
+.form-card input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-card button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-card button:hover {
+    background-color: #218838;
+}
+
+/* Success message styles */
+.success-message {
+    color: green;
+    margin-bottom: 10px;
+}
+
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.form-group select,
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #333; /* Same as header */
+    color: #fff; /* Same as header */
+    text-align: center; /* Center the text */
+    padding: 10px 20px; /* Same as header */
+    position: fixed; /* Fixed at the bottom */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+}

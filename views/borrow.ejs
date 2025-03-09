@@ -1,0 +1,30 @@
+<%- include('partials/header') %>
+    <main>
+        <div class="form-card">
+            <h2>Borrow a Book</h2>
+            <% if (typeof success !== 'undefined') { %>
+                <p class="success-message"><%= success %></p>
+            <% } %>
+            <% if (typeof error !== 'undefined') { %>
+                <p class="error-message"><%= error %></p>
+            <% } %>
+            <form action="/borrow" method="POST">
+                <div class="form-group">
+                    <label for="user_id">User:</label>
+                    <select id="user_id" name="user_id" required>
+                        <% users.forEach(user => { %>
+                            <option value="<%= user.user_id %>"><%= user.name %> (<%= user.email %>)</option>
+                        <% }) %>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="book_id">Book ID:</label>
+                    <input type="number" id="book_id" name="book_id" required>
+                </div>
+
+                <button type="submit">Borrow</button>
+            </form>
+        </div>
+    </main>
+<%- include('partials/footer') %>

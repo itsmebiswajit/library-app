@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+    <main>
+        <div class="form-card">
+        <h2>Return a Book</h2>
+        <% if (typeof success !== 'undefined') { %>
+            <p style="color: green;"><%= success %></p>
+        <% } %>
+        <% if (typeof error !== 'undefined') { %>
+            <p style="color: red;"><%= error %></p>
+        <% } %>
+        <form action="/return" method="POST">
+            <label for="transaction_id">Transaction ID:</label>
+            <input type="number" id="transaction_id" name="transaction_id" required>
+
+            <button type="submit">Return</button>
+        </div>
+    </form>
+    </main>
+<%- include('partials/footer') %>
